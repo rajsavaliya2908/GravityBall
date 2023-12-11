@@ -17,7 +17,6 @@ const ControlScreen = (props: ControlScreenProps) => {
     <SafeAreaView style={styles.container}>
       <Text style={styles.welcome}>{Strings.Welcome}</Text>
       <Image style={styles.ball} source={Images.ic_ball} />
-
       <Pressable style={styles.playContainer} onPress={handlePlayBtn}>
         <Image style={styles.play} source={Images.ic_play} />
       </Pressable>

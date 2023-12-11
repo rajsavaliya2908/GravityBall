@@ -11,6 +11,7 @@ import ball from '../ball';
 import block from '../block';
 import {EntitiesProps} from '../types';
 import bottom from '../bottom';
+import top from '../top';
 
 export default (restart?: EntitiesProps): EntitiesProps => {
   if (restart) {
@@ -25,7 +26,7 @@ export default (restart?: EntitiesProps): EntitiesProps => {
     physics: {engine: engine, world: world},
     Ball: ball(
       world,
-      {x: width / 2, y: verticalScale(20)},
+      {x: width / 2, y: verticalScale(100)},
       {height: verticalScale(65), width: horizontalScale(70)},
     ),
     Block: block(
@@ -41,5 +42,10 @@ export default (restart?: EntitiesProps): EntitiesProps => {
       {x: width / 2, y: height},
       {height: verticalScale(75), width: width},
     ),
+    // Top: top(
+    //   world,
+    //   {x: width / 2, y: 0},
+    //   {height: verticalScale(125), width: width},
+    // ),
   };
 };

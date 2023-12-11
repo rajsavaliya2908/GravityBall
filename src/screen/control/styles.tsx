@@ -1,17 +1,10 @@
 import {StyleSheet} from 'react-native';
 import Colors from '../../utils/Colors';
-import {
-  fontBold,
-  fontRegular,
-  horizontalScale,
-  moderateScale,
-  verticalScale,
-} from '../../utils/StyleConfig';
+import {fontBold, moderateScale, verticalScale} from '../../utils/StyleConfig';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
     backgroundColor: Colors.background,
   },
   ball: {
