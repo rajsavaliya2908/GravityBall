@@ -9,12 +9,10 @@ const BallSystem = (
   touches
     .filter(t => t.type === 'press')
     .forEach(t => {
-      if (entities.Ball.body.position.y > 30) {
-        Matter.Body.setVelocity(entities.Ball.body, {
-          x: entities.Ball.body.velocity.x,
-          y: -3,
-        });
-      }
+      Matter.Body.setVelocity(entities.Ball.body, {
+        x: entities.Ball.body.velocity.x,
+        y: -3,
+      });
     });
   Matter.Engine.update(engine, time.delta);
   return entities;

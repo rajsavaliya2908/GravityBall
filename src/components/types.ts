@@ -17,7 +17,6 @@ export interface EntitiesProps {
   Ball: ComponentProps;
   Block: ComponentProps;
   Bottom: ComponentProps;
-  Top?: ComponentProps;
 }
 
 export interface TimeProps {
